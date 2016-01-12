@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <fsm>
+    <inputs>a,b</inputs>
+    <outputs>0,1</outputs>
+    <states>q1,q2,q3,q4,q5</states>
+	<init_state>q1</init_state>
+	<transition>
+	q1,q1,a,0,
+        q1,q4,b,1, 
+        q4,q4,b,1, 
+        q4,q3,a,1,
+        q3,q1,b,1,
+        q3,q5,a,0,
+        q5,q5,b,1,
+        q5,q2,a,1,
+        q2,q5,b,1,
+        q2,q1,a,0,
+	</transition>
+ </fsm>
